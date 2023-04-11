@@ -1,0 +1,209 @@
+
+.nombre-link{
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:#fff; 
+}
+
+
+#encabezado{
+margin:10px;
+display: flex;
+justify-content: center;
+padding: 10px;
+}
+
+
+h1{
+    color:#1d2778;
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    font-weight: 700;
+
+
+}
+
+#imagen-equipo img{
+    max-width: 100%;
+    
+}
+
+.parrafo-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px; 
+}
+
+.parrafo-container h2{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 10px;
+    margin: 6px;
+}
+
+.parrafo-container p{
+    padding: 15px;
+    margin: 10px;
+    color:#1d2778;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 500;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Mukta', sans-serif;
+    color:#1d2778;
+}
+
+form {
+    margin: 0 auto;
+    width: 50%;
+    padding: 8px;
+    border: 2px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Mukta', sans-serif;
+    background-color: #f5e687;
+    box-shadow: 0 10px 25px rgba(144, 153, 21, 0.2);
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+  }
+
+form:hover {
+    transform: translateY(-2px);
+}
+
+form h5{
+    font-family: 'Mukta', sans-serif;
+    color:#1d2778;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 2px;
+}
+textarea{
+    height: 100px;
+    padding:5px;
+}
+
+form select{
+    width: 80%;
+    justify-content: center;
+    background-color: #fcf7bb;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px rgb(144 153 21 / 20%);
+    border: none;
+    padding: 3px;
+    margin-bottom: 18px;
+}
+
+select option{
+    font-family: 'Mukta', sans-serif;
+    color:#1d2778;
+}
+
+.input{
+    width: 80%;
+    justify-content: center;
+    background-color: #fcf7bb;   
+    border-radius: 5px; 
+    box-shadow: 0 10px 25px rgba(144, 153, 21, 0.2);
+    border:none;
+    padding: 5px;
+
+}
+.input:hover{
+    transform: translateY(-2px);
+}
+
+.label-form{
+    margin-bottom: -15px;
+    font-family: 'Mukta', sans-serif;
+    color:#1d2778;
+}
+.checkbox-label{
+    font-family: 'Mukta', sans-serif;
+    color:#1d2778;
+}
+#checkbox-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    height: 25px;
+    align-items:center;
+    margin-bottom:18px;
+}
+    
+.checkbox-input{
+    cursor: pointer;
+    border-color: #9867C5;
+}
+
+.checkbox-input:hover{
+    transform: translateY(-2px);
+}
+
+#btn-form{
+    width:30%;
+    border-radius: 5px;
+    border: none;
+    background-color: #a390d5;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 7px;
+    margin: 10px;
+    font-family: 'Mukta', sans-serif;
+    color:beige;
+}
+
+#btn-form:hover {
+    background-color: #9867C5;
+    transform: translateY(-2px);
+}    
+
+
+#footer{
+    background-color: #a390d5;
+    padding: 10px;
+    
+}
+
+#info-footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Mukta', sans-serif;
+    padding: 10px;
+    color:#fff;
+}
+#info-footer h5{
+    font-size: 14px;
+}
+
+#info-footer h6{
+    font-size: 12px;
+}    
+
+#redes ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    padding: 5px;
+    margin: 1px;
+}
+
+#redes li{
+    padding: 10px;
+}
+
+#redes svg{
+    color:#fff;
+}
