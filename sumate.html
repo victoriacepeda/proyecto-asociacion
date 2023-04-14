@@ -30,7 +30,7 @@
                             <a class="nav-link nombre-link" aria-current="page" href="#">Equipo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nombre-link" href="#">Campañas</a>
+                            <a class="nav-link nombre-link" href="campanas.html">Campañas</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nombre-link" href="#">Sumate a la causa</a>
@@ -65,7 +65,7 @@
                 <div class="h5-container">
                     <h5>Formulario de solicitud</h5>
                 </div>
-                <input class="input" type="text" name="nombre_postulante" placeholder="Nombre"><br>
+                <input class="input" type="text" name="nombre_postulante" placeholder="Nombre" required><br>
                 
                 <input class="input" type="text" name="apellido_postulante" placeholder="Apellido"><br>
                 
@@ -83,8 +83,8 @@
                 <input class="input" type="email" name="email_postulante" placeholder="Email"><br>
                 <label class="label-form" for="experiencia">¿Tenés experiencia como voluntario?</label><br>
                 <div id="checkbox-container">
-                    <input class="checkbox-input" type="checkbox" name="seleccionar"><label class="checkbox-label">Si</label>
-                    <input  class="checkbox-input" type="checkbox" name="seleccionar"><label class="checkbox-label">No</label><br>
+                    <input class="checkbox-input" type="radio" name="seleccionar" value="si"><label class="checkbox-label">Si</label>
+                    <input  class="checkbox-input" type="radio" name="seleccionar" value="no"><label class="checkbox-label">No</label><br>
                 </div>
                 <label class="label-form" for="msg-experiencia">Contanos tu experiencia con voluntariados</label><br>
                 <textarea class="input" name="mensaje_postulante_experiencia"></textarea><br>
