@@ -13,7 +13,6 @@ btn.onclick = function(event){
 
     $div.appendChild($p);
     contenedorMensaje.appendChild($div);
-    
     event.preventDefault();
     
 };
