@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.nombre-link{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:#fff; 
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+    
+    
+}
+
+.titulo{
+    font-weight: 700;
+    font-family:'Amatic SC', cursiva; ;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+    color:#1d2778;
+   
+
+
+}
+
+header{
+    width: 100%;
+    height: 600px;  
+    background-image: url(/multimedia/imagen-principal.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    position: relative; 
+     
+
+
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;  
+
+}
+
+nav a{
+    color: #fff;
+    font-size: 300;
+    text-decoration: none;
+    margin-right: 20px; 
+}
+
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 50%;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    
+}
+
+.textos-header H1{
+    font-size: 50px;
+    color: #8c52ff
+   
+
+}
+
+.textos-header H2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #f1bf42;
+}
+
+
+.wave{
+    position: absolute;
+    width: 100%;
+}
+
+/* about us */
+
+main{
+    padding: 30px 0 60px 0;
+    background: #f5ebde;
+    
+}
+
+.contenedor-bienvenidos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+
+
+.imagen-about-us{
+    max-width: 48%;
+    height: 400px;
+    border-radius: 20px;
+    
+}
+
+.contenedor-bienvenidos .contenido-textos{
+    position: relative;   
+    width: 48%;
+    bottom: 20px;
+    background: #f1bf4295;
+    border-radius: 20px;
+    
+    
+    
+
+}
+
+.contenido-textos{
+     color: #ffffff;
+     font-size: 15px;
+     margin: 20px;
+     flex-wrap: wrap;
+     
+     
+}
+
+.contenido-textos p{
+    position: relative;
+    top: 50px;
+    padding: 10px 30px;
+    text-align: center;
+    
+}
+
+.contenido-textos a{
+    display: block;
+    position: relative;
+    right: 15px;
+    width: 200px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 10px;
+    margin: 100px 150px;
+    padding: 10px 30px;
+    background: #ffffffc5;
+    color: #000;
+    text-decoration: none;
+    
+    
+}
+
+.contenido-textos a:hover{
+    background-color: #bea9e6;
+}
+
+
+
+/*galeria*/
+
+.portafolio{
+    background: #f2f2f2;
+
+}
+
+.portafolio h2{
+    position:relative;
+    top: 50px;
+    
+
+}
+
+
+
+.galeria-port{
+    display: flex;
+    justify-content:space-evenly ;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 30%;
+    height: 200%;
+    margin-bottom:10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.imagen-port img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 42%, 46%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria p{
+    width: 70px;
+    margin-top: 100px;
+   
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+/*donaciones*/
+
+.contenedor-donaciones{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+   
+}
+
+.contenedor-donaciones h2{
+    position: relative;
+    left: 600px;
+    bottom: 350px;
+    
+}
+
+.contenedor-voluntarios{
+    width: 28%;
+    text-align: center;
+}
+
+.contenedor-voluntarios img{
+    width: 100%;
+    
+}
+
+.contenedor-voluntarios h3{
+    margin: 10px 0;
+
+}
+
+.contenedor-voluntarios p{
+    font-weight: 300;
+    text-align: center;
+
+    
+} 
+
+/*footer*/
+
+#footer{
+    background-color: #a390d5;
+    padding: 10px;
+    
+}
+
+#info-footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Mukta', sans-serif;
+    padding: 10px;
+    color:#fff;
+}
+#info-footer h5{
+    font-size: 14px;
+}
+
+#info-footer h6{
+    font-size: 12px;
+}    
+
+#redes ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: center;
+    padding: 5px;
+    margin: 1px;
+}
+
+#redes li{
+    padding: 10px;
+}
+
+#redes svg{
+    color:#fff;
+}
+
