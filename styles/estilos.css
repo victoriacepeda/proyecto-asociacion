@@ -33,11 +33,8 @@ body{
     font-size: 50px;
     text-align: center;
     margin-bottom: 60px;
-    margin-top: 20px;
+    margin-top: 42px;
     color:#1d2778;
-   
-
-
 }
 
 header{
@@ -123,11 +120,14 @@ main{
     border-radius: 20px;
 }
 
-.contenedor-bienvenidos .contenido-textos{
-     
+.contenedor-bienvenidos .contenido-textos {
     background: #f1bf4295;
     border-radius: 20px;
     max-width: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenido-textos{
@@ -136,25 +136,27 @@ main{
      margin: 20px;
      flex-wrap: wrap;
      padding: 50px;
+     text-align: center;
      
 }
-.contenido-textos p{
- 
+.contenido-textos p {
     margin-top: 10px;
-    margin-bottom: 46px;
+    margin-bottom: 28px;
     font-family: Poppins, sans-serif;
     max-width: 100%;
-    padding: 2px;
+    padding: 10px;
 }
 
 
-.contenido-textos a{
-
+.contenido-textos a {
     text-decoration: none;
     background-color: #a390d5;
     color: white;
-    padding: 8px;
+    padding: 10px;
     border-radius: 50px;
+    margin: 0px;
+    width: 100px;
+    text-align: center;
 }
 
 .contenido-textos a:hover{
@@ -345,9 +347,6 @@ main{
 }
 
 
-
-
-
 @media (max-width: 768px) {
 
     .wave{
@@ -374,8 +373,8 @@ main{
     }
 
     .titulo {
-        margin-bottom: 48px;
-        margin-top: 10px;
+        margin-bottom: 15px;
+        margin-top: 43px;
         margin-left: 26px;
     }
 
@@ -401,11 +400,14 @@ main{
 @media (max-width: 376px){
 
     main {
-        padding: 30px 0 0px 0;
+        padding: 0spx 0 0px 0;
     }
 
     .wave{
-        height: 36px;
+        display: none;
+    }
+    .contenedor .bienvenidos{
+        padding: 0px;
     }
     header{
         background-size: 159% 153%;
@@ -415,7 +417,6 @@ main{
         font-size: 35px;
         margin-bottom: 10px;
         margin-top: 24px;
-
     }
 
     .textos-header h1 {
@@ -426,13 +427,43 @@ main{
         font-size: 20px;
     }
 
+    .imagen-about-us {
+        height: 215px;
+    }
+
+    .contenido-textos{
+        padding: 15px;
+        text-align: center;
+    }
+
+    .contenido-textos p {
+        margin-top: 1px;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+
+    .contenido-textos a{
+        font-size: 12px;
+    }
 
     .portafolio h2 {
     top: 16px;
+    padding: 4px;
+    }
+
+    .contenedor{
+        padding: 15px 0;
+    }
+    .contenedor-voluntarios{
+        width: 90%;
+    }
+
+    .contenedor-voluntarios img {
+        width: 80%;
     }
 
     .contenedor-voluntarios h3 {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .contenedor-voluntarios p {
@@ -442,6 +473,6 @@ main{
     }
 
     .contenedor-donaciones {
-        justify-content: space-evenly;
+        flex-direction: column;
     }
 }
