@@ -19,12 +19,12 @@ body{
 
 .contenedor{
     padding: 60px 0;
-    width: 90%;
-    max-width: 1000px;
+
     margin:auto;
     overflow: hidden;
-    
-    
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
 }
 
 .titulo{
@@ -110,30 +110,24 @@ main{
 
 .contenedor-bienvenidos{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
+    justify-content: space-around;
+    margin-left: 40px;
+    height: 355px;
 }
 
 
 
-.imagen-about-us{
-    max-width: 48%;
-    height: 400px;
+.imagen-about-us {
+    max-width: 44%;
+    height: 355px;
     border-radius: 20px;
-    
 }
 
 .contenedor-bienvenidos .contenido-textos{
-    position: relative;   
-    width: 48%;
-    bottom: 20px;
+     
     background: #f1bf4295;
     border-radius: 20px;
-    
-    
-    
-
+    max-width: 40%;
 }
 
 .contenido-textos{
@@ -141,33 +135,26 @@ main{
      font-size: 15px;
      margin: 20px;
      flex-wrap: wrap;
+     padding: 50px;
      
-     
+}
+.contenido-textos p{
+ 
+    margin-top: 10px;
+    margin-bottom: 46px;
+    font-family: Poppins, sans-serif;
+    max-width: 100%;
+    padding: 2px;
 }
 
-.contenido-textos p{
-    position: relative;
-    top: 50px;
-    padding: 10px 30px;
-    text-align: center;
-    
-}
 
 .contenido-textos a{
-    display: block;
-    position: relative;
-    right: 15px;
-    width: 200px;
-    text-align: center;
-    font-weight: 500;
-    border-radius: 10px;
-    margin: 100px 150px;
-    padding: 10px 30px;
-    background: #ffffffc5;
-    color: #000;
+
     text-decoration: none;
-    
-    
+    background-color: #a390d5;
+    color: white;
+    padding: 8px;
+    border-radius: 50px;
 }
 
 .contenido-textos a:hover{
@@ -326,32 +313,42 @@ main{
     color:#fff;
 }
 
-@media (max-width: 1110px) {
+
+@media (min-width: 720px) and (max-width:910px){
+    .contenido-textos {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 719px){
+
+    .contenedor{
+        justify-content: center;
+    }
+
     .imagen-about-us {
         border-radius: 20px 20px 0px 0px;
+        max-width: 90%;
+        margin: 20px;
+        margin-bottom: 0px;
     } 
 
     .contenedor-bienvenidos .contenido-textos{
     border-radius: 0px 0px 20px 20px;
+    max-width: 90%;
+    margin-top: 0px;
+   }
+
+   .contenedor-bienvenidos{
+    display: contents;
    }
 }
 
-@media (min-width: 945px) {
-    .contenido-textos a {
 
-        right: 15px;
-        width: 114px;
 
-        margin: 71px 74px 18px 175px;
-        padding: 10px 20px;
 
-    }
-}
 
 @media (max-width: 768px) {
-    .contenido-textos a {
-        margin: 71px 85px;
-    }
 
     .wave{
         height: 131px;
@@ -386,11 +383,7 @@ main{
         justify-content: space-around;
         margin: 8px 12px 0px 9px;
     }
-    .contenedor {
-        padding: 35px 0;
-        max-width: 100%;
-        margin: 4px;
-    }
+
 
     .contenedor-voluntarios h3 {
     
@@ -403,16 +396,6 @@ main{
         padding: 3px;
     }
 
-    .contenedor-bienvenidos .contenido-textos {
-    
-        width: 90%;
-        margin-left: 56px;
-    }
-
-    .imagen-about-us {
-        max-width: 90%;
-        margin-left: 38px;
-    }
 }
 
 @media (max-width: 376px){
@@ -430,7 +413,9 @@ main{
 
     .titulo {
         font-size: 35px;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
+        margin-top: 24px;
+
     }
 
     .textos-header h1 {
@@ -440,24 +425,7 @@ main{
     .textos-header h2 {
         font-size: 20px;
     }
-    .contenedor-bienvenidos .contenido-textos {
-    
-        width: 90%;
-        margin-left: 17px;
-        height: 295px;
-    }
 
-    .contenido-textos a {
-        margin: 64px 64px;
-    }
-    
-    .imagen-about-us {
-        max-width: 90%;
-        margin-left: 0px;
-    }
-    .contenedor {
-        padding: 0px 0px;
-    }
 
     .portafolio h2 {
     top: 16px;
