@@ -6,9 +6,10 @@ const $verMasBtn = document.querySelectorAll('.mas-btn');
     item.addEventListener('click', event => {
 
       const mostrarTexto = event.target.parentNode.firstElementChild.nextElementSibling;
-      //mostrarTexto.style.display ='block';
-      mostrarTexto.classList = 'mostrar'
-
-     
+      if (mostrarTexto.classList.contains ('oculto')){
+        mostrarTexto.classList.remove('oculto');
+      } else {
+        mostrarTexto.classList.add('oculto');
+      }
     })
   })
